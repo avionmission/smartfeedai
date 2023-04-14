@@ -1,38 +1,99 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.p {
+  margin-top: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App-header { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight:300;
+  margin-top: 6px;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  width: 60%;
+  justify-content: center;
+}
+
+.search-bar input {
+  background-color: #202226;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  padding: 10px;
+  margin-right: 10px;
+  font-family: Inter;
+  width: 70%;
+}
+
+@media only screen and (max-width : 930px){
+  .search-bar {
+    width: 95%;
   }
-  to {
-    transform: rotate(360deg);
+  .search-bar input {
+    width: 70%;
   }
 }
+
+.search-bar input::placeholder {
+  font-family: Inter;
+  font-size:medium;
+  color: #999;
+}
+
+.search-bar button {
+  color: #151618;
+  font-family: Inter;
+  font-weight: 600;
+  display: flex;
+  background-color: #C89AFE;
+  padding: 7px;
+  border: 2px solid #171717;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #252830;
+  border: 2px solid #000000;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding: 20px;
+  max-width: 500px;
+  margin-top: 60px;
+  border-radius: 15px;
+}
+
+.action-buttons button {
+  margin-right: 5px;
+}
+
