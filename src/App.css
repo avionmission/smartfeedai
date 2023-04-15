@@ -123,20 +123,19 @@
   transition: 0.3s ease-in-out;
 }
 .navbar li a:hover{
-  color: #584cfc ;
+  color: #999 ;
 }
 .navbar li a:hover::after{
   content: "";
   width: 30%;
   height: 2px;
-  background: #584cfc;
+  background: #999;
   position: absolute;
   bottom: -4px;
   left: 20px;
 }
 .icon{
   padding: 0 10px;
-  color: #584cfc;
+  color: #999;
 
 }
-
