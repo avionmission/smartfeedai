@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import './App.css';
 import FeedItemComponent from './components/FeedItemComponent';
+import {MdOutlineAccountCircle} from "react-icons/fa"
 
 function App() {
 
@@ -14,15 +15,23 @@ function App() {
 
   return (
     <div className="App">
+
       <header className="App-header">
         <p className='heading'>Smart<span style={{color:'#54DA9A'}}>Feed</span>.ai</p>
         <p className='subtitle'>The Future of Reading Online with Ai</p>
       </header>
 
-      <div className='search-bar'> 
-        <input type="text" placeholder="Enter a URL.."/>
-        <button>Generate Feed</button>
-      </div>
+      <form className='search-bar'>
+          <input 
+            htmlFor='url'
+            type="url" 
+            name="url" 
+            className='inputurl' 
+            placeholder='Enter url of a blogpost...' 
+            id='url' 
+            required/>
+          <input className='btn' type="submit" value="GENERATE" name='url' id='url'/>
+      </form>
 
       <FeedItemComponent 
         title="Simplify infrastructure management with Napptive"
