@@ -1,14 +1,15 @@
 import React from 'react'
 import '../App.css'
 
-function FeedItemComponent(title) {
+function FeedItemComponent(props) {
     return(
         <div className='item-container'>
-        <p className='title'>{title.title}</p>
-        <p className='gist'>{title.gist}</p>
+        <p className='title'>{props.title}</p>
+        <p className='url'>{props.url}</p>
+        <p className='gist'>{props.gist}</p>
         <div className='action-buttons'>
-          <button className='read-full-button'>READ FULL</button>
-          <button className='save-for-later'>SAVE FOR LATER</button>
+          <button className='read-full-btn'>READ FULL</button>
+          <button className='save-btn'>SAVE FOR LATER</button>
         </div>
       </div>
     );

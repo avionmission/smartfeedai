@@ -58,14 +58,11 @@ function App() {
       </header>
       
       <form className='search-bar' onSubmit={handleSubmit}>
-        <input type="url" name="url" className='inputurl' placeholder='Paste your url here' id='url' required onChange={(e) => setUrl(e.target.value)} />
-        <button type="submit" value="submit" name='url' id='url'>Generate Feed</button>
+        <input type="url" name="url" className='inputurl' placeholder='Enter url of a blogpost..' id='url' required onChange={(e) => setUrl(e.target.value)} />
+        <button className='btn' type="submit" value="submit" name='url' id='url'>Generate Feed</button>
       </form>
       
-      <FeedItemComponent  title={title} gist={gist} url={url}>
-      <p>Title: {title}</p>
-        <p>Gist: {gist}</p>
-      </FeedItemComponent>
+      <FeedItemComponent  title={title} gist={gist} url={url}/>
     </div>
   </>
   );
