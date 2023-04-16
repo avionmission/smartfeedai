@@ -7,7 +7,7 @@ ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json package-lock.json ./
 COPY ./public ./public
 RUN npm install 
-RUN npm build  
+RUN npm run build  
 
 # Build step #2: build the API with the client as static files
 FROM python:3.10
