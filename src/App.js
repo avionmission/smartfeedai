@@ -3,7 +3,6 @@ import './App.css';
 import FeedItemComponent from './components/FeedItemComponent';
 import { MdInfoOutline, MdOutlineAccountCircle, MdOutlineBookmarks } from 'react-icons/md';
 
-
 function App() {
 
   
@@ -52,11 +51,12 @@ function App() {
     {/* NAV BAR END */}
 
     <div className="App">
+
       <header className="App-header">
         <p className='heading'>Smart<span style={{ color: '#54DA9A' }}>Feed</span>.ai</p>
         <p className='subtitle'>The Future of Reading Online with Ai</p>
       </header>
-
+      
       <form className='search-bar' onSubmit={handleSubmit}>
         <input type="url" name="url" className='inputurl' placeholder='Paste your url here' id='url' required onChange={(e) => setUrl(e.target.value)} />
         <button type="submit" value="submit" name='url' id='url'>Generate Feed</button>

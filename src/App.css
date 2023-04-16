@@ -4,14 +4,14 @@
   flex-direction: column;
   align-items: center;
   color: white;
-  min-height: 100vh;
+  min-height: 100vh
 }
 
 .App-header { 
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 50px;
 }
 
 .heading {
@@ -35,62 +35,117 @@
   justify-content: center;
 }
 
-.search-bar input {
+.search-bar .inputurl {
   background-color: #202226;
   color: #fff;
   border: 1px solid #fff;
   border-radius: 8px;
   padding: 10px;
-  margin-right: 10px;
   font-family: Inter;
-  width: 70%;
+  width: 300px;
+  margin-right: 10px;
 }
 
 @media only screen and (max-width : 930px){
   .search-bar {
     width: 95%;
   }
-  .search-bar input {
+  .search-bar .inputurl {
     width: 70%;
   }
 }
 
-.search-bar input::placeholder {
+.search-bar .inputurl::placeholder {
   font-family: Inter;
   font-size:medium;
   color: #999;
 }
 
-.search-bar button {
+.search-bar .btn {
   color: #151618;
   font-family: Inter;
   font-weight: 600;
   display: flex;
   background-color: #C89AFE;
-  padding: 7px;
+  padding: 10px;
   border: 2px solid #171717;
   border-radius: 8px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: 1s;
 }
+
+.search-bar .btn:hover {
+  background-color: #8d6cb3;
+  color: white;
+  transition: 1s;
+}
+
 
 .item-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #252830;
-  border: 2px solid #000000;
+  border: 2px solid #1B68FF;
   margin-left: 25px;
   margin-right: 25px;
-  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
   max-width: 500px;
   margin-top: 60px;
   border-radius: 15px;
 }
 
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.url {
+  font-size: 12px;
+  color: #999;
+  text-decoration: underline;
+}
+
+.gist {
+  font-weight: 300;
+}
+
 .action-buttons button {
-  margin-right: 5px;
+  margin-right: 10px;
+}
+
+.read-full-btn {
+  background-color: #00C39A;
+  padding: 8px;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-family: Inter;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.read-full-btn:hover {
+  background-color: #279980;
+  color:white;
+  transition: 1s;
+}
+
+.save-btn {
+  background-color: #4FA2FF;
+  padding: 8px;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-family: Inter;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 1s;
 }
 
 /* NAV BAR */
@@ -138,4 +193,10 @@
   padding: 0 10px;
   color: #999;
 
+}
+=======
+.save-btn:hover {
+  background-color: #4079bb;
+  color:white;
+  transition: 1s;
 }
