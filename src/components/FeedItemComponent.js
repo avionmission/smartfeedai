@@ -6,7 +6,7 @@ function FeedItemComponent(props) {
         <div className='item-container'>
         <p className='title'>{props.title}</p>
         <p className='url'>{props.url}</p>
-        <p className='gist'>{props.gist}</p>
+        <p className='gist'>Gist: {props.gist}</p>
         <div className='action-buttons'>
           <button className='read-full-btn'>READ FULL</button>
           <button className='save-btn'>SAVE FOR LATER</button>
