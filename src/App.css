@@ -148,6 +148,53 @@
   transition: 1s;
 }
 
+/* NAV BAR */
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1c2b39;
+  padding: 5px 80px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+ 
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.navbar li{
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+.navbar li a{
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+.navbar li a:hover{
+  color: #999 ;
+}
+.navbar li a:hover::after{
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #999;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+.icon{
+  padding: 0 10px;
+  color: #999;
+
+}
+=======
 .save-btn:hover {
   background-color: #4079bb;
   color:white;
