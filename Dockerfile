@@ -17,7 +17,7 @@ COPY --from=build-step /app/build ./build
 
 RUN mkdir ./api
 COPY api/requirements.txt api/api.py api/.flaskenv ./api/
-RUN pip install -r ./requirements.txt
+RUN pip install -r ./api/requirements.txt
 ENV FLASK_ENV production
 
 EXPOSE 3000
