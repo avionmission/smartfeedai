@@ -19,6 +19,6 @@ COPY api/requirements.txt api/api.py api/.flaskenv ./
 RUN pip install -r ./requirements.txt
 ENV FLASK_ENV production
 
-EXPOSE 5000
+EXPOSE 3000
 WORKDIR /app/api
-CMD ["gunicorn", "-b", ":5000", "api:app"]
+CMD ["gunicorn", "-b", ":3000", "api:app"]
