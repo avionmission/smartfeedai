@@ -5,6 +5,7 @@ FROM node:14-alpine as build-step
 WORKDIR /app 
 ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json package-lock.json ./
+COPY ./src ./src 
 COPY ./public ./public
 RUN npm install 
 RUN npm run build  
