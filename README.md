@@ -3,6 +3,8 @@ SmartFeedAi is uses AI to helps users browse through online content efficiently.
 
 Personal blogs provide a unique perspective that AI cannot replicate. Contrary to fear-mongering that blogging will see a decline because of Ai, Ai can assist readers who love online reading by providing short summaries of articles that they might be interested in, this is what SmartFeedAi does.
 
+### To run the docker image of this application: `docker run --rm -p 3000:3000 avionmission/smartfeedai:latest`
+
 ## Getting Started
 
 In the project directory, you can run:
