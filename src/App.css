@@ -54,6 +54,18 @@
   .search-bar .inputurl {
     width: 70%;
   }
+  .url {
+    word-wrap: break-word;
+    max-width: 250px;
+  }
+  .nav {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+  }
+  .App-header {
+    margin-top: 0;
+  }
 }
 
 .search-bar .inputurl::placeholder {
@@ -96,7 +108,7 @@
   padding-right: 30px;
   padding-top: 20px;
   padding-bottom: 30px;
-  max-width: 500px;
+  max-width: 600px;
   margin-top: 60px;
   border-radius: 15px;
 }
