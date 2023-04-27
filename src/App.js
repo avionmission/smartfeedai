@@ -8,7 +8,7 @@ function App() {
 
   const [isLoading, setIsLoading] = useState(false);
 
-  const [url, setUrl] = useState("https://yuvichh.hashnode.dev/i-tried-open-source-for-1-year");
+  const [url, setUrl] = useState("https://docs.mindsdb.com/what-is-mindsdb");
   const [title, setTitle] = useState("Efficient Information Retrieval with AI Summarization: Streamlining the Process of Knowledge Acquisition.");
   const [gist, setGist] = useState("AI-powered summarization tools are becoming popular as they provide a quick way to summarize lengthy documents, articles or web pages by simply pasting the link. These tools use natural language processing, machine learning, and deep learning to identify the most relevant content. They are useful for professionals and individuals who need to quickly review large volumes of information. However, it's important to use them with a critical eye and verify the accuracy of the summary.");
 

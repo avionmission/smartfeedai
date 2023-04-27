@@ -5,4 +5,33 @@ Personal blogs provide a unique perspective that AI cannot replicate. Contrary t
 
 ### Old Version with Flask Backend: [old-smartfeedai](https://github.com/avionmission/smartfeedai/tree/42e8289e53c68207f09388dc72f8fbda760c689a)
 
+# How to Use?
+1. Clone this repo
+2. Create a MindsDB cloud account - you can get your free account [here](https://cloud.mindsdb.com/). 
+3. Create a model in your MindsDB cloud editor and run the query:
+    
+    ```sql
+    CREATE MODEL text_summary
+    PREDICT text_summary
+    USING
+    engine = 'openai',
+    model_name = 'gpt-4',
+    input_column = 'text_long',
+    max_tokens = 200,
+    prompt_template = 'Summarize the following text, but only enough to inspire intrigue. text:{{text_long}}';
+    ```
+4. To start the backend use:
 
+    ```bash
+    cd smartfeedai/api
+    MINDSDB_USER=<email> MINDSDB_PASS=<password> npm start
+    ```
+5. To start the frontend use:
+
+    ```bash
+    cd smartfeedai
+    npm start
+    ```
+6. That's it! 🎉🎉 Now you can use SmartFeed.ai on your localhost 3000.
+
+Here's the hashnode article explaining [the story, engineering and vision behind Smartfeedai](https://avionmission.hashnode.dev/building-an-ai-saas-with-mindsdb-and-react-smartfeedai) 
