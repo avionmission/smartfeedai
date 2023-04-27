@@ -34,4 +34,4 @@ Personal blogs provide a unique perspective that AI cannot replicate. Contrary t
     ```
 6. That's it! 🎉🎉 Now you can use SmartFeed.ai on your localhost 3000.
 
-Here's the hashnode article explaining [the story, engineering and vision behind Smartfeedai](https://avionmission.hashnode.dev/building-an-ai-saas-with-mindsdb-and-react-smartfeedai) 
+Here's the hashnode article explaining [the story, engineering and vision behind Smartfeedai](https://avionmission.hashnode.dev/building-an-ai-saas-with-mindsdb) 
