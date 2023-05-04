@@ -3,6 +3,8 @@ SmartFeedAi is uses AI to helps users browse through online content efficiently.
 
 Personal blogs provide a unique perspective that AI cannot replicate. Contrary to fear-mongering that blogging will see a decline because of Ai, Ai can assist readers who love online reading by providing short summaries of articles that they might be interested in, this is what SmartFeedAi does.
 
+Demo video: [Link](https://youtu.be/KuWdanSs7Bg)
+
 ### Old Version with Flask Backend: [old-smartfeedai](https://github.com/avionmission/smartfeedai/tree/42e8289e53c68207f09388dc72f8fbda760c689a)
 
 # How to Use?
