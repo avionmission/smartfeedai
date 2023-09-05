@@ -3,6 +3,12 @@ SmartFeedAi is uses AI to helps users browse through online content efficiently.
 
 Personal blogs provide a unique perspective that AI cannot replicate. Contrary to fear-mongering that blogging will see a decline because of Ai, Ai can assist readers who love online reading by providing short summaries of articles that they might be interested in, this is what SmartFeedAi does.
 
+To run the docker image of this application: `docker run --rm -p 3000:3000 avionmission/smartfeedai:latest`
+
+🎊 We won the track-3 of the Napptive x Hashnode Hackathon with this project, here's the case study: [Using OAM and Napptive to Deploy an AI-powered React App](https://avionmission.hashnode.dev/using-oam-and-napptive-to-deploy-an-ai-powered-react-app)
+
+🎥 Demo Video (After porting to Express.js backend and using MindsDB): [Watch](https://youtu.be/KuWdanSs7Bghttps://youtu.be/KuWdanSs7Bg)
+
 ## Getting Started
 
 In the project directory, you can run:
@@ -20,6 +26,6 @@ To start the app on a gunicorn web server:
 6. To start the server run `gunicorn -b :3000 api:app` and the app should be running at localhost:5000
 
 To build a docker image:
-7. Install docker on your linux system if it's not already installed using these instructions: (https://docs.docker.com/engine/install/ubuntu/)[https://docs.docker.com/engine/install/ubuntu/]
+7. Install docker on your linux system if it's not already installed using these instructions: [https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/)
 8. To build docker image: `docker build -f Dockerfile -t smartfeedai`
 9. To run the docker image: `docker run --rm -p 3000:3000 smartfeedai`
